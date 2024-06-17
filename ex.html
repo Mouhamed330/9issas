@@ -5,117 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إضافة وحذف مصفوفة</title>
-    <style>
-        body {
-            direction: rtl;
-            text-align: right;
-            font-family: Arial, sans-serif;
-        }
 
-        .card {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .card>span {
-            margin-bottom: 10px;
-        }
-
-        .card>input {
-            margin-bottom: 10px;
-        }
-
-        .card-buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        button {
-            margin: 5px;
-        }
-
-        .input-container {
-            margin: 10px 0;
-        }
-    </style>
 </head>
+<style>
+    .h12 {
+        text-align: center;
+        color: red;
+    }
+
+    .h22 {
+        text-align: left;
+        color: #4ae962;
+    }
+
+    .pp {
+        font-size: 50px;
+    }
+</style>
 
 <body>
-    <h1>مصفوفات</h1>
-    <div id="arrayContainer"></div>
-    <div class="input-container">
-        <button onclick="addArray()">إضافة مصفوفة جديدة</button>
-    </div>
+    <u>
+        <h1 class="h12"> مغامرة في عالم مواز </h1>
+    </u>
+    <p class="pp">
+        يحكى في الأساطير القديمة أن العالم كان مقسما الى ثلاث
+        ممالك كبيرة الأولى مملكة نصف البشر اما عن الثانية فيحكمها
+        الاقزام الذين يحترفون صناعة الأسلحة وغيرها اما المملكة
+        الثالثة فتقع تحت سيطرت الشياطين و بالطبع تتساءلون مثلي
+        عن البشر اين يسكنون صحيح يأسفني القول انه لا وجود للبشر
+        في ذلك العالم او هذا ما يعتقده الأغلبية آآه نسيت سأعرفكم عن
+        نفسي انا ماشل طالب ثانوية يعيش حياة مدرسية عادية كنت
+        احب العاب الفيديو مشاهدة الانمي في الواقع كنت اظن انه لا
+        وجود لمثل تلك الاساطير التي تحكي التي تحكي عن علم مليء
+        بالوحوش و السحر و الشياطين و لكن في أحد الأيام بينما كنت
+        انا و رفيقي ذاهبين الى المكتبة اذ بي اسمع أصوات أجراس
+        تقرع بصوت عال فحاولت معرفة مكان صدور الصوت و اذا
+        بدائرة سحرية كبيرة ترسم تحتنا كالتي اراها في الانمي و في
+        غضون دقائق فتحت عيناي فوجدت نفسي في مرج اخضر و
+        ارا فوقي تنين اخضر كبير يحلق في البداية لم اصدق ما رأيته
+        لكن سرعان ما بدأت ابحث عن صديقي في الجوار فلم اجد له
+        اثرا فبدأت بالمشي لعل و عسى ان اجد مدينة او قرية ما فإذا
+        بالليل قد بلغني و لم اجن اين ابيت الا انني لمحت غابة كثيفةمن بعيد فشرعت بالركض نحوها فاذا بقطيع من الذئاب
+        الضخمة تركض باتجاهي فبدأت بالجري و الصراخ بشكل
+        هستيري كالمجنون من شدة الرعب و الخوف و من كثرة
+        الجري تعبت رجلاي و بدأتا بالارتعاش حتى بلغ السيل الزبى
+        فسقطت على الأرض و لم استطع النهوض فساقاي لم تعد
+        قادرتان على حملي و ان أرى الذئاب تقترب مني فطننت ان
+        نهايتي قد حانة فاستسلمت للأمر الواقع لأنه لم تكن بيدي حيلة
+        و اذا بضوء يخرج من يدي و يظهر بعده سيف قديم كبير و
+        خفيف في نفس الوقت و عندها قررت الدفاع عن نفسي رغم
+        تفاجئي و عند وصول الذئاب الي بدأت بالالتفاف حولي و كأنها
+        خائفة من الاقتراب فاستغللت هذه الفرصة و بدأت بالهجوم فاذا
+        بي الوح بالسيف بشكل عشوائي فانا لم امسك سيفا من قبل و
+        لا اعلم كيفية استخدامه و اذا بالسيف ينطق و يقول تحرك
+        نحوهم انا سأتكفل بالباقي لم اكن حينها في وعيي كنت ابحث
+        عن أي وسيلة للبقاء حيا فاستمعت الى ما يقوله فوجدت نفسي
+        اقطع الذئب بسهولة ففوجئت بذلك لان السيف لا يبدو بتلك
+        الحدة و القوة و بعدها من شدة الحماس انقضضت على باقي
+        الذئاب و قتلتها ثم أكملت السير و كأن شيئا لو يحدث و عندها
+        تذكرت ان السيف قد نطق فحاولت الحديث معه فأجابني انا
+        سيلفر احد الاسلحة الأربعة الأسطورية في هذا العالم حيث
+        امتلك طاقة سحرية لا مثيل لها و انا امثل صفة الشجاعةفقاطعته قائلا هل تعرف اين تحن او اخبرني على الأقل عن
+        مكان امن لأبيت فيه فأنا متعب كثيرا فاخبرني اننا في مملكة
+        الاقزام و ان تلك الذئاب هي فرقة استطلاعية تابعة لجيش ملك
+        الشياطين الذي يحاول السيطرة على الممالك الثلاث و اخبرني
+        أيضا عن مكان اقرب قرية فذهبت اليها و فور وصولي اليها
+        بدأ الجميع بالصراخ و الجري وقول احذروا انه وحش في
+        البداية ظننت ان وحشا قد هجم على القرية لكن سرعان ما
+        اخبرني سيلفر انهم يقصدونني لأنني امتلك هالة سوداء كثيفة
+        حرة تطوف في كل مكان و هذا يرعب الجميع كما اخبرني ان
+        هالتي مرعبة بشكل كبير و ذلك بسبب طاقتي الكبيرة
+        فاضطررت حينها للمبيت في العراء .
 
-    <script>
-        let arrays = [
-            ["نص 1", "نص 2", "نص 3"],
-            ["نص 4", "نص 5", "نص 6"]
-        ];
+    </p>
 
-        function renderArrays() {
-            const arrayContainer = document.getElementById('arrayContainer');
-            arrayContainer.innerHTML = '';
-            arrays.forEach((arr, index) => {
-                const card = document.createElement('div');
-                card.className = 'card';
+    <h2 class="h22"> يتبع.... </h2>
 
-                const arrayText = document.createElement('span');
-                arrayText.textContent = `مصفوفة ${index + 1}: [${arr.join(', ')}]`;
-
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.placeholder = 'أدخل نص جديد';
-
-                const addButton = document.createElement('button');
-                addButton.textContent = 'إضافة نص';
-                addButton.onclick = () => {
-                    const newText = input.value.trim();
-                    if (newText !== "") {
-                        arrays[index].push(newText);
-                        renderArrays();
-                    }
-                };
-
-                const deleteButton = document.createElement('button');
-                deleteButton.textContent = 'حذف المصفوفة';
-                deleteButton.onclick = () => {
-                    removeArray(index);
-                };
-
-                card.appendChild(arrayText);
-                card.appendChild(input);
-                card.appendChild(addButton);
-
-                const buttonContainer = document.createElement('div');
-                buttonContainer.className = 'card-buttons';
-                buttonContainer.appendChild(deleteButton);
-
-                card.appendChild(buttonContainer);
-                arrayContainer.appendChild(card);
-            });
-        }
-
-        function addArray() {
-            const newArray = []; // مصفوفة جديدة فارغة
-            arrays.push(newArray);
-            renderArrays();
-        }
-
-        function removeArray(index) {
-            arrays.splice(index, 1);
-            renderArrays();
-        }
-
-        // عرض المصفوفات الأولية عند تحميل الصفحة
-        renderArrays();
-    </script>
 </body>
 
 </html>
